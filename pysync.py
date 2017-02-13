@@ -32,7 +32,7 @@ def _scp_thread(q: Queue, pq: Queue, rpath):
 
 
 def main():
-  parser = argparse.ArgumentParser(description="Python SCP threader")
+  parser = argparse.ArgumentParser(description="Python rsync threader")
   parser.add_argument("path", help="Glob path to recursively upload", type=str)
   parser.add_argument("rpath", help="rpath, i.e. user@host:path", type=str)
   parser.add_argument("-t", help="Threads number", default=4, type=int)
