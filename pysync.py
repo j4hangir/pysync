@@ -26,7 +26,7 @@ def _progress_thread(q: Queue, total: int):
 def _scp_thread(q: Queue, pq: Queue, rpath):
   while True:
     path = q.get()
-    subprocess.Popen(["rsync", "-oR", path, rpath]).communicate()
+    subprocess.Popen(["rsync", "-roR", path, rpath]).communicate()
     q.task_done()
     pq.put(1)
 
