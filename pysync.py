@@ -1,4 +1,4 @@
-# !/usr/bin/env python3
+#!/usr/bin/env python3
 __author__ = 'j4hangir'
 
 import glob
@@ -19,7 +19,7 @@ def _progress_thread(q: Queue, total: int):
     with tqdm(total=total) as bar:
         while True:
             i = q.get()
-            bar.next(i)
+            bar.update(i)
             q.task_done()
 
 
