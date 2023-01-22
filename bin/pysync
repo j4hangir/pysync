@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+__author__ = 'j4hangir'
+
+from pysync import main
+
+main()
+
+

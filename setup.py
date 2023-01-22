@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pysync',
-      version='1.1.0',
+      version='1.2.0',
       description='Multithreaded rsync in Python',
       url='https://git.j4hangir.com/py/pysync.git',
       author='j4hangir',
@@ -9,6 +9,6 @@ setup(name='pysync',
       packages=['pysync'],
       scripts=['bin/pysync'],
       install_requires=[
-          'tqdm',
+          'tqdm', 'loguru'
       ],
       zip_safe=False)
